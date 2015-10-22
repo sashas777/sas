@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- 
+/**
+ * @package     sas_default
+ * @copyright   Copyright (c) 2015 Sashas IT Support Inc. (http://www.sashas.org)
+ * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+ */
+ -->
+ <config>
+	<modules>
+		<Sashas_Sas>
+			<version>1.0.0</version>
+		</Sashas_Sas>
+	</modules>
+	<global>
+		<helpers>
+			<sas>
+				<class>Sashas_Sas_Helper</class>
+			</sas>
+		</helpers>
+		<blocks>
+			<sas>
+				<class>Sashas_Sas_Block</class>
+			</sas>
+		</blocks>
+		<models>
+			<sas>
+				<class>Sashas_Sas_Model</class>
+				<resourceModel>sas_resource</resourceModel>
+			</sas>
+			<sas_resource>
+				<class>Sashas_Sas_Model_Resource</class>				 
+			</sas_resource> 
+		</models>
+		<resources>
+			<sas_setup>
+				<setup>
+					<module>Sashas_Sas</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</sas_setup>
+			<sas_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</sas_write>
+			<sas_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</sas_read>
+		</resources>
+	</global>
+	<default>
+		<sas>
+			<css_framework><![CDATA[bootstrap]]></css_framework>
+		</sas>
+	</default>
+</config>

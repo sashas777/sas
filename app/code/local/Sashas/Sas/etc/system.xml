@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- 
+/**
+ * @package     sas_default
+ * @copyright   Copyright (c) 2015 Sashas IT Support Inc. (http://www.sashas.org)
+ * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+ */
+ -->
+ <config>
+	  <tabs>
+		<sashas_modules translate="label" module="sas">
+            <label>Sashas Extensions</label>
+            <sort_order>10</sort_order>
+        </sashas_modules>
+	  </tabs>
+	  <sections>
+	  	<sas translate="label" module="sas">
+	  		<label>Theme Settings</label>
+	  		<tab>sashas_modules</tab>
+	  		<sort_order>0</sort_order>
+	  		<show_in_default>1</show_in_default>
+	  		<show_in_website>1</show_in_website>
+	  		<show_in_store>1</show_in_store>
+	  		<groups>
+	  			<sas_group translate="label" module="sas">
+	  				<label>CSS Framework/Js Plugins Settings</label>
+	  				<frontend_type>text</frontend_type>
+	  				<sort_order>1000</sort_order>
+	  				<show_in_default>1</show_in_default>
+	  				<show_in_website>1</show_in_website>
+	  				<show_in_store>1</show_in_store>	  			 						  					
+	  				<fields>
+	  					<css_framework translate="label">
+	  						<label>Css Framework: </label>
+	  						<comment>CSS Framework to used for theme</comment>
+	  						<frontend_type>select</frontend_type>
+	  						<source_model>sas/system_config_source_cssFramework</source_model>
+	  						<sort_order>10</sort_order>
+	  						<show_in_default>1</show_in_default>
+	  						<show_in_website>1</show_in_website>
+	  						<show_in_store>1</show_in_store>		  						
+	  					</css_framework> 	 
+	  				</fields>
+	  			</sas_group>
+	  		</groups>
+	  	</sas>
+	  </sections>
+</config>
