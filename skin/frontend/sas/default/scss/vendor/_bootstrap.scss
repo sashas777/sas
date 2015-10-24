@@ -4,7 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-$icon-font-path: "../../../fonts/bootstrap/";
+$icon-font-path: "bootstrap/";
 
 @function twbs-font-path($path) {
   @return font-url($path, true);

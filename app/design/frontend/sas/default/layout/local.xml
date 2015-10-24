@@ -26,6 +26,9 @@
  			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="bootstrap"><type>skin_js</type><name>js/bootstrap.min.js</name></action>
  			
  			<!-- foundation -->
+ 			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="foundation" ><type>skin_css</type><name>css/foundation.css</name></action> 			
+ 			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="foundation"><type>skin_js</type><name>js/foundation.min.js</name></action>
+ 			
  			
  			<action method="addItem"><type>skin_js</type><name>js/html5shiv.min.js</name><params/><if><![CDATA[ (lt IE 9) & (!IEMobile)]]></if></action>
  		
