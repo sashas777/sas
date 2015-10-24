@@ -19,10 +19,14 @@
             <!-- Add stylesheets with no media queries for use in IE 8 and below -->
             <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
             <!-- Add stylesheets with media queries for use by modern browsers -->
-            <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action> 			
- 			<action method="addItem"><type>skin_css</type><name>css/bootstrap.css</name></action>
+            <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
+            
+            <!-- bootstrap --> 			
+ 			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="bootstrap" ><type>skin_css</type><name>css/bootstrap.css</name></action> 			
+ 			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="bootstrap"><type>skin_js</type><name>js/bootstrap.min.js</name></action>
  			
- 			<action method="addItem"><type>skin_js</type><name>js/bootstrap.min.js</name></action> 			
+ 			<!-- foundation -->
+ 			
  			<action method="addItem"><type>skin_js</type><name>js/html5shiv.min.js</name><params/><if><![CDATA[ (lt IE 9) & (!IEMobile)]]></if></action>
  		
  		</reference>

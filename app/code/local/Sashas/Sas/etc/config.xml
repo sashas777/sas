@@ -31,6 +31,11 @@
 			<sas_resource>
 				<class>Sashas_Sas_Model_Resource</class>				 
 			</sas_resource> 
+			<core>
+				<rewrite>
+					<layout>Sashas_Sas_Model_Core_Layout</layout>
+				</rewrite>
+			</core>
 		</models>
 		<resources>
 			<sas_setup>
@@ -55,7 +60,9 @@
 	</global>
 	<default>
 		<sas>
-			<css_framework><![CDATA[bootstrap]]></css_framework>
+			<sas_group>
+				<css_framework><![CDATA[bootstrap]]></css_framework>
+			</sas_group>			 
 		</sas>
 	</default>
 </config>
