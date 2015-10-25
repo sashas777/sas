@@ -4,7 +4,7 @@ Alex Lukyanau
 #Magento Settings
 1. System->Configuration->Design->Package  sas
 
-#Instalaltion
+#Installation
 1. Install Ruby+Compass 
    https://gorails.com/setup/ubuntu/14.04 <br/>
 ```
