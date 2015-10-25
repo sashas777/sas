@@ -62,7 +62,16 @@
 		<sas>
 			<sas_group>
 				<css_framework><![CDATA[bootstrap]]></css_framework>
-			</sas_group>			 
+			</sas_group>	
+			<sas_blocks>
+				<poll_block><![CDATA[1]]></poll_block>
+				<recenty_viewed_products><![CDATA[1]]></recenty_viewed_products>
+				<recenty_compared_products><![CDATA[1]]></recenty_compared_products>
+				<paypal_logo><![CDATA[1]]></paypal_logo>
+			</sas_blocks>		 
+			<sas_layout>
+				<category_layout><![CDATA[page/2columns-left.phtml]]></category_layout>
+			</sas_layout>
 		</sas>
 	</default>
 </config>

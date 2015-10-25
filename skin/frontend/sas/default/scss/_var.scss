@@ -60,7 +60,7 @@ $bp-xlarge: 1199px;
 
 $gap: 10px;
 
-$trim: 30px;
+$trim: 15px;
 // This will get applied on viewports smaller than 480px
 $trim-small: 15px;
 
@@ -74,8 +74,8 @@ $box-spacing: 10px;
 $element-spacing: 7px;
 
 // Dimensions
-
-$max-content-width: 1200px;
+ 
+$max-content-width: 1140px;
 $max-container-width: $trim + $max-content-width + $trim;
 $max-std-formatted-width: 50em;
 

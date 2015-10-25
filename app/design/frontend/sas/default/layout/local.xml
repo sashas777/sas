@@ -15,11 +15,6 @@
     		<action method="removeItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
     		<action method="removeItem"><type>skin_css</type><name>css/madisonisland-ie8.css</name><params/></action>
     		<action method="removeItem"><type>skin_css</type><name>css/madisonisland.css</name><params/></action> 	
-    		 	
-            <!-- Add stylesheets with no media queries for use in IE 8 and below -->
-            <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
-            <!-- Add stylesheets with media queries for use by modern browsers -->
-            <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
             
             <!-- bootstrap --> 			
  			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="bootstrap" ><type>skin_css</type><name>css/bootstrap.css</name></action> 			
@@ -28,10 +23,58 @@
  			<!-- foundation -->
  			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="foundation" ><type>skin_css</type><name>css/foundation.css</name></action> 			
  			<action method="addItem" ifconfig="sas/sas_group/css_framework" condition="foundation"><type>skin_js</type><name>js/foundation.min.js</name></action>
- 			
- 			
+ 			 			    		 
+            <!-- Add stylesheets with no media queries for use in IE 8 and below -->
+            <action method="addItem"><type>skin_css</type><name>css/styles-ie8.css</name><params/><if><![CDATA[ (lte IE 8) & (!IEMobile)]]></if></action>
+            <!-- Add stylesheets with media queries for use by modern browsers -->
+            <action method="addItem"><type>skin_css</type><name>css/styles.css</name><params/></action>
+            
  			<action method="addItem"><type>skin_js</type><name>js/html5shiv.min.js</name><params/><if><![CDATA[ (lt IE 9) & (!IEMobile)]]></if></action>
  		
  		</reference>
- 	</default>
+ 		<reference name="right">
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/poll_block" >
+                <name>right.poll</name>
+            </action>
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/recenty_viewed_products" >
+                <name>right.reports.product.viewed</name>
+            </action>                              
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/recenty_compared_products" >
+                <name>right.reports.product.compared</name>
+            </action>
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/paypal_logo" >
+                <name>paypal.partner.right.logo</name>
+            </action>                                                         			 
+ 		</reference>
+ 	</default> 
+ 	
+ 	<catalog_category_layered_nochildren>
+ 		<reference name="right"> 	 	
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/recenty_viewed_products" >
+                <name>left.reports.product.viewed</name>
+            </action>    	
+        </reference>
+ 	</catalog_category_layered_nochildren>
+ 	
+ 	<catalog_category_default>
+        <reference name="root">
+            <action method="setTemplate"><template helper="sas/categoryLayout" /></action>
+        </reference> 	
+ 		<reference name="right">
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/paypal_logo" >
+                <name>paypal.partner.right.logo</name>
+            </action>   			 	
+ 		</reference> 	
+ 	</catalog_category_default>
+ 	
+ 	<catalog_category_layered>
+        <reference name="root">
+            <action method="setTemplate"><template helper="sas/categoryLayout" /></action>
+        </reference> 	
+ 		<reference name="right">
+ 			<action method="unsetChild" ifconfig="sas/sas_blocks/paypal_logo" >
+                <name>paypal.partner.right.logo</name>
+            </action>   			 	
+ 		</reference> 	
+ 	</catalog_category_layered> 	
 </layout>

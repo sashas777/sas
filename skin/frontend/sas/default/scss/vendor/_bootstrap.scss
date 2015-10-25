@@ -3,7 +3,7 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+  
 $icon-font-path: "bootstrap/";
 
 @function twbs-font-path($path) {
@@ -15,7 +15,6 @@ $icon-font-path: "bootstrap/";
 }
 
 $bootstrap-sass-asset-helper: true;
-
 
 // Core variables and mixins
 @import "vendor/bootstrap/variables";

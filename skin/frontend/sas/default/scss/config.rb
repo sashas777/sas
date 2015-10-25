@@ -11,14 +11,14 @@ relative_assets = true
 fonts_dir = "../fonts"
 
 
-#output_style = :expanded
-output_style = :compressed 
+output_style = :expanded
+#output_style = :compressed 
 
 environment = :production
 
 
 line_comments = false
 cache = true
-color_output = false # required for mixture
+color_output = true # required for mixture
 
 Sass::Script::Number.precision = 7 # chrome needs a precision of 7 to round properly
