@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ /**
+ * @author		Sashas
+ * @category    Sashas
+ * @package     Sashas_Slideshow
+ * @copyright   Copyright (c) 2015 Sashas IT Support Inc. (http://www.sashas.org)
+ * @license     http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+ */
+-->
+<layout>
+    <adminhtml_adminhtml_slideshow_slideshowslides>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="slideshow/adminhtml_slideshows_edit_tab_slides" name="adminhtml_slideshows_edit_tab_slides"/>
+            <block type="adminhtml/widget_grid_serializer" name="slideshow_grid_serializer">
+                <reference name="slideshow_grid_serializer">
+                    <action method="initSerializerBlock">
+                        <grid_block_name>adminhtml_slideshows_edit_tab_slides</grid_block_name>
+                        <data_callback>getSelectedSlides</data_callback>
+                        <hidden_input_name>links[slides]</hidden_input_name>
+                        <reload_param_name>slideshow_slides</reload_param_name>
+                    </action>
+                    <action method="addColumnInputName">
+                        <input_name>position</input_name>
+                    </action>
+                </reference>
+            </block>
+        </block>
+    </adminhtml_adminhtml_slideshow_slideshowslides>
+    
+ 	<adminhtml_adminhtml_slideshow_slideshowslidesgrid>
+        <block type="core/text_list" name="root" output="toHtml">
+            <block type="slideshow/adminhtml_slideshows_edit_tab_slides" name="adminhtml_slideshows_edit_tab_slides"/>
+        </block>
+    </adminhtml_adminhtml_slideshow_slideshowslidesgrid> 
+</layout>
