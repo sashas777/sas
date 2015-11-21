@@ -1,0 +1,3 @@
+[submodule "magmi"]
+	path = magmi
+	url = git@github.com:dweeves/magmi-git.git
