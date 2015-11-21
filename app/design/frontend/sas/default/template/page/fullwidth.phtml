@@ -1,0 +1,50 @@
+<?php
+/**
+ * Template for Mage_Page_Block_Html
+ */
+?>
+
+<!DOCTYPE html>
+
+<!--[if lt IE 7 ]> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="<?php echo $this->getLang(); ?>" id="top" class="no-js"> <!--<![endif]-->
+
+<head>
+<?php echo $this->getChildHtml('head') ?>
+</head>
+<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
+<?php echo $this->getChildHtml('after_body_start') ?>
+<div class="wrapper">
+    <?php echo $this->getChildHtml('global_notices') ?>
+    <div class="page">
+    	<div class="container">
+        	<?php echo $this->getChildHtml('header') ?>
+        </div>
+        <div class="main-block container-fluid">
+            <div class="main row">
+                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                <div class="col-lg-12 messages-block">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                </div>
+                <div class="col-lg-12 content-block">
+                    <?php echo $this->getChildHtml('content') ?>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+        <?php echo $this->getChildHtml('footer_before') ?>
+        </div>
+        <div class="container">
+        <?php echo $this->getChildHtml('footer') ?>
+        </div>
+        <?php echo $this->getChildHtml('global_cookie_notice') ?>
+        <?php echo $this->getChildHtml('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>
+
