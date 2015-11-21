@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author		Sashas
+ * @category    Sashas
+ * @package     Sashas_Slideshow
+ * @copyright   Copyright (c) 2015 Sashas IT Support Inc. (http://www.sashas.org)
+ * @license    http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+ */
+-->
+<config>
+	  <tabs>
+		<sashas_modules translate="label" module="slideshow">
+            <label>Sashas Extensions</label>
+            <sort_order>10</sort_order>
+        </sashas_modules>
+	  </tabs>
+	  <sections>
+	  	<slideshow translate="label" module="slideshow">
+	  		<label>Slideshow</label>
+	  		<tab>sashas_modules</tab>
+	  		<sort_order>15000</sort_order>
+	  		<show_in_default>1</show_in_default>
+	  		<show_in_website>1</show_in_website>
+	  		<show_in_store>1</show_in_store>
+	  		<groups>
+	  			<slideshow_group translate="label" module="slideshow">
+	  				<label>Slideshow General Settings</label>
+	  				<frontend_type>text</frontend_type>
+	  				<sort_order>1000</sort_order>
+	  				<show_in_default>1</show_in_default>
+	  				<show_in_website>1</show_in_website>
+	  				<show_in_store>1</show_in_store>
+	  				<fields>
+	  					<include_jquery translate="label">
+	  						<label>Include jQuery: </label>	  						
+	  						<frontend_type>select</frontend_type>	  						
+	  						<source_model>adminhtml/system_config_source_yesno</source_model>
+	  						<sort_order>10</sort_order>
+	  						<show_in_default>1</show_in_default>
+	  						<show_in_website>1</show_in_website>
+	  						<show_in_store>1</show_in_store>	  	
+	  						<comment><![CDATA[Disable it only if your site already has jQuery included]]></comment>						
+	  					</include_jquery>		  	 	  							 
+	  				</fields>
+	  			</slideshow_group>
+	  			<slideshows_group>
+	  				<label>Slideshow Js Settings</label>
+	  				<frontend_type>text</frontend_type>
+	  				<sort_order>2000</sort_order>
+	  				<show_in_default>1</show_in_default>
+	  				<show_in_website>1</show_in_website>
+	  				<show_in_store>1</show_in_store>	  			
+	  				<fields>
+	  					<jssor>
+	  						<label>Enable Jssor Library: </label>	  						
+	  						<frontend_type>select</frontend_type>	  						
+	  						<source_model>adminhtml/system_config_source_yesno</source_model>
+	  						<sort_order>10</sort_order>
+	  						<show_in_default>1</show_in_default>
+	  						<show_in_website>1</show_in_website>
+	  						<show_in_store>1</show_in_store>	  	
+	  						<comment><![CDATA[Include jssor slideshow to all pages.If No you will need manually add layout updates. Disabled by default because it is in beta.You need have enabled only sliders you use.]]></comment>							  					 	  				
+	  					</jssor>
+	  					<bxslider>
+	  						<label>Enable bxSlider Library: </label>	  						
+	  						<frontend_type>select</frontend_type>	  						
+	  						<source_model>adminhtml/system_config_source_yesno</source_model>
+	  						<sort_order>20</sort_order>
+	  						<show_in_default>1</show_in_default>
+	  						<show_in_website>1</show_in_website>
+	  						<show_in_store>1</show_in_store>	  	
+	  						<comment><![CDATA[Include bxSlider slideshow to all pages.If No you will need manually add layout updates. You need have enabled only sliders you use.]]></comment>							  					 	  				
+	  					</bxslider>	  					
+	  				</fields>		  			
+	  			</slideshows_group>
+	  		</groups>
+	  	</slideshow>
+	  </sections>
+</config>

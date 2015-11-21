@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author		Sashas
+ * @category    Sashas
+ * @package     Sashas_Slideshow
+ * @copyright   Copyright (c) 2015 Sashas IT Support Inc. (http://www.sashas.org)
+ * @license    http://opensource.org/licenses/GPL-3.0  GNU General Public License, version 3 (GPL-3.0)
+ */
+-->
+<widgets>
+    <slideshow type="slideshow/widget">
+        <name>Slideshow</name>
+        <description type="desc">Add Slideshow</description>
+        <is_email_compatible>0</is_email_compatible>
+        <parameters>               
+			<slideshow_id translate="label">
+				<label>Slideshow: </label>	  						
+				<type>select</type>
+				<source_model>slideshow/source_slideshows</source_model>
+				<comment><![CDATA[Select slideshow which will be shown]]></comment>
+                <visible>1</visible>
+                <required>1</required>				
+				<sort_order>10</sort_order>	  						
+			</slideshow_id>			        
+        </parameters>
+    </slideshow>
+</widgets> 
