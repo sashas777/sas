@@ -53,7 +53,7 @@ includes/
 index.php
 index.php.sample
 install.php
-js/
+#js/
 lib/
 mage
 media/

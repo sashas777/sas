@@ -23,9 +23,11 @@
     	<div class="container">
         	<?php echo $this->getChildHtml('header') ?>
         </div>
-        <div class="main-container col3-layout">
+        <div class="main-block container 3columns">
             <div class="main">
-                <?php echo $this->getChildHtml('breadcrumbs') ?>
+            	<div class="col-lg-12 breadcrumbs-block">
+                	<?php echo $this->getChildHtml('breadcrumbs') ?>
+                </div>
                 <div class="col-wrapper">
                     <?php // This left_first block will display above the main content on smaller viewports ?>
                     <?php if ($_leftContent = $this->getChildHtml('left_first')): ?>
@@ -40,8 +42,12 @@
                 <div class="col-right sidebar"><?php echo $this->getChildHtml('right') ?></div>
             </div>
         </div>
-        <?php echo $this->getChildHtml('footer_before') ?>
-        <?php echo $this->getChildHtml('footer') ?>
+        <div class="container">
+        	<?php echo $this->getChildHtml('footer_before') ?>
+        </div>
+        <div class="container">
+        	<?php echo $this->getChildHtml('footer') ?>
+        </div>
         <?php echo $this->getChildHtml('global_cookie_notice') ?>
         <?php echo $this->getChildHtml('before_body_end') ?>
     </div>
