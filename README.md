@@ -27,6 +27,11 @@ sudo apt-get install ruby-compass
 gem install compass
 ```
 
+#SASS Conpilation
+```
+compass watch
+```
+
 #Additional options 
 
 1. Usage ifconfig at the xml comapre by value. Example: 
@@ -34,3 +39,11 @@ gem install compass
 ```
 <action method="addItem" ifconfig="sas/sas_group/css_framework" condition="bootstrap" ><type>skin_css</type><name>css/bootstrap.css</name></action> 
 ```
+
+#Extensions
+
+1. Sashas_Slideshow <br/>
+http://www.magentocommerce.com/magento-connect/slideshow-6.html <br/>
+
+
+
