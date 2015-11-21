@@ -1,0 +1,11 @@
+{
+    "name": "dweeves/magmi",
+    "description": "Magento Mass Importer",
+    "license": "MIT License",
+    "homepage": "http://sourceforge.net/projects/magmi/",
+    "authors":[
+        {
+            "name":"Sebastien Bracquemont"
+        }
+    ]
+}
