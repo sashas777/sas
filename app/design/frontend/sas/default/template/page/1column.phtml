@@ -21,7 +21,7 @@
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
-    	<div class="container">
+    	<div class="container header-block">
         	<?php echo $this->getChildHtml('header') ?>
         </div>
         <div class="main-block container 1column">
@@ -37,10 +37,10 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container footer-before">
         	<?php echo $this->getChildHtml('footer_before') ?>
         </div>
-        <div class="container">
+        <div class="container footer-block">
         	<?php echo $this->getChildHtml('footer') ?>
         </div>
         <?php echo $this->getChildHtml('global_cookie_notice') ?>

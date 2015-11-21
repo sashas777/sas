@@ -2741,6 +2741,10 @@ body {
   font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
 }
 
+.header-block {
+  padding-bottom: 20px;
+}
+
 /* ============================================ *
  * Language switcher + welcome message
  * ============================================ */
