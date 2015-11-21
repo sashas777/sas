@@ -64,7 +64,10 @@ skin/frontend/base/
 skin/frontend/default/
 skin/frontend/rwd/
 skin/install/
-var/
+var/cache/*
+var/package/*
+var/session/*
+var/.htaccess
 
 #Adminhtml Template
 app/design/adminhtml/default/default/etc/
