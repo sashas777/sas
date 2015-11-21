@@ -1194,7 +1194,6 @@ a.button:hover {
  */
 .breadcrumbs {
   overflow: hidden;
-  margin: -15px 0 15px;
 }
 
 .breadcrumbs li {

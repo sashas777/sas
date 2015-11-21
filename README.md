@@ -29,7 +29,7 @@ gem install compass
 
 #SASS Compilation
 ```
-cd skin/frontend/sas/default
+cd skin/frontend/sas/default/scss/
 compass watch
 ```
 
