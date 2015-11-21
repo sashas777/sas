@@ -47,4 +47,14 @@ compass watch
 http://www.magentocommerce.com/magento-connect/slideshow-6.html <br/>
 
 
+#Magmi Settings
+
+1. Default UN/PW: magmi. After it configured it uses admin credentials <br/>
+2. After first Login you need to fill databse connection credentials. Save Profile and Save Global parameters. <br/>
+3. Filesystem Path to magento directory: ../../../  <br/>
+4. Enable  Image attributes processor v1.0.33a  <br/>
+4.1 Image search path:  var/import/images <br/>
+5. Enable  Value Trimmer for select/multiselect v0.0.3  <br/>
+
+
 
