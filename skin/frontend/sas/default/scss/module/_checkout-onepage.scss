@@ -84,7 +84,7 @@
 
 /* Using .no-touch since touch devices emulate hover, thereby making steps look active that are not */
 .no-touch .opc .section.allow:not(.active) .step-title:hover {
-    background-color: $c-module-background;
+  
 }
 
 .opc .section.active .step-title {

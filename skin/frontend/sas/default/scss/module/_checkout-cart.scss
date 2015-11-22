@@ -49,8 +49,7 @@
 .cart-forms .discount,
 .cart-forms .giftcard,
 .cart-forms .shipping {
-    padding: $box-spacing;
-    background-color: $c-module-background;
+    padding: $box-spacing;  
     border: 1px solid $c-module-border;
 }
 
@@ -716,12 +715,11 @@
         margin-left: 0;
     }
     #co-shipping-method-form .sp-methods dd label {
-        border: 1px solid $c-module-border;
-        background-color: $c-module-background-hover;
+        border: 1px solid $c-module-border;        
         min-width: 220px;
 
         &:hover {
-            background-color: shade($c-module-background, 10%)
+           
         }
     }
 }

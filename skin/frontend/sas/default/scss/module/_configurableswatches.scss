@@ -89,8 +89,7 @@
 .swatch-label {
     border: 1px solid #fff;
     margin: 0;
-    white-space: nowrap;
-    background: $c-module-background;
+    white-space: nowrap;    
 }
 
 .configurable-swatch-list {
@@ -163,8 +162,7 @@
         }
     }
 
-    .swatch-label {
-        background: $c-module-background;
+    .swatch-label {        
         border: 1px solid $c-module-border;
         border-radius: $default-border-radius - 2;
         display: block;

@@ -36,8 +36,7 @@ body[class*="checkout-multishipping-"] {
             float: left;
             width: 20%;
             text-align: center;
-            padding: 8px 1% 6px;
-            background: $c-module-background;
+            padding: 8px 1% 6px;           
             text-transform: uppercase;
             border-bottom: 1px solid $c-module-border;
             border-right: 1px solid $c-module-border;
@@ -136,8 +135,7 @@ body[class*="checkout-multishipping-"] {
         .box-title {
             h2, h3, h4 {
                 font-weight: normal;
-                width: 100%;
-                background: $c-module-background;
+                width: 100%;               
                 border-bottom: 1px solid $c-module-border;
                 padding: 10px;
                 font-size: 14px;
@@ -145,8 +143,7 @@ body[class*="checkout-multishipping-"] {
         }
         > h4 {
             font-weight: normal;
-            width: 100%;
-            background: $c-module-background;
+            width: 100%;           
             border-bottom: 1px solid $c-module-border;
             padding: 10px;
             font-size: 14px;

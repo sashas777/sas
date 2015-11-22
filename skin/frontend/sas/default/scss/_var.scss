@@ -86,7 +86,7 @@ $max-std-formatted-width: 50em;
 // Usually not used directly in Sass partials.
 // Only used to define context-based color vars in this file.
 
-$c-blue: #3399CC;
+$c-blue: #000000;
 $c-green: #11B400;
 $c-pink: #D85378;
 $c-orange: #F3793B;
@@ -177,8 +177,7 @@ $c-link-active: darken($c-action, (5% / 2));
 
 // Module (generic)
 
-$c-module-background: #F4F4F4;
-$c-module-background-hover: shade($c-module-background, 3%);
+ 
 $c-module-background-secondary: #EAF8FF;
 $c-module-background-dark: #AAAAAA;
 // This should be applied whenever the border is surrounding a white element and/or is directly showing on white.

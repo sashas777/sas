@@ -29,8 +29,7 @@
         width: 100%;
         position: relative;
         border: 1px solid $c-module-border;
-        background-color: $c-module-background;
-
+       
         li {
             float: left;
             border-right: 1px solid transparent;
@@ -104,8 +103,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: $border-color;
-    position: relative;
-    background-color: $c-module-background;
+    position: relative;   
 
     &:after {
         @include triangle(#{$arrow-direction}, 4px, $c-action);
@@ -115,7 +113,7 @@
     }
 
     &:hover {
-        background-color: $c-module-background-hover;
+        
     }
 }
 

@@ -45,8 +45,7 @@
         top: 0;
         width: 100%;
 
-        li {
-            border-bottom: 1px solid $c-module-background;
+        li {            
             color: $c-link;
             cursor: pointer;
             font-size: $f-size-xs;
@@ -84,8 +83,7 @@
  * Search - Advanced
  * ============================================ */
 
-.advanced-search {
-    background: $c-module-background;
+.advanced-search {    
     border: 1px solid $c-module-border-light;
     padding: $trim;
 

@@ -567,8 +567,7 @@ $productsGridActionHeight: 85px;
         @include touch-button;
 
         &:hover {
-            text-decoration: none;
-            background: $c-module-background-hover;
+            text-decoration: none;            
         }
     }
 }

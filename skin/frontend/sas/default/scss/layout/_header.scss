@@ -316,18 +316,14 @@ a.skip-link {
     }
 
     .no-touch #header-account a:hover,
-    .no-touch .nav-primary a:hover {
-        background-color: $c-module-background;
+    .no-touch .nav-primary a:hover {        
         text-decoration: none;
     }
 
 }
 
 .account-cart-wrapper {
-    position: absolute;
-    top:0px;
-    right:0px;
-
+   
     @include bp(max-width, $bp-medium) {
         position: static;
     }
