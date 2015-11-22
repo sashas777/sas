@@ -68,6 +68,7 @@ var/cache/*
 var/package/*
 var/session/*
 var/.htaccess
+var/resource_config.json
 
 #Adminhtml Template
 app/design/adminhtml/default/default/etc/

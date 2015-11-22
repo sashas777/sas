@@ -54,6 +54,7 @@ http://www.magentocommerce.com/magento-connect/slideshow-6.html <br/>
 3. Filesystem Path to magento directory: ../../../  <br/>
 4. Enable  Image attributes processor v1.0.33a  <br/>
 4.1 Image search path:  var/import/images <br/>
+4.2 Image import mode: Yes
 5. Enable  Value Trimmer for select/multiselect v0.0.3  <br/>
 6. Enable Configurable Item processor v1.3.7a
 
