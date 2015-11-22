@@ -4152,6 +4152,9 @@ p.product-name a:hover {
 /* ============================================ *
  * Catalog - Product
  * ============================================ */
+.product-view {
+  padding-top: 20px;
+}
 .product-view .product-essential .extra-info .ratings .rating-box,
 .product-view .product-essential .extra-info .ratings .amount {
   float: left;
