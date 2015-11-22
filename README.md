@@ -57,5 +57,3 @@ http://www.magentocommerce.com/magento-connect/slideshow-6.html <br/>
 4.2 Image import mode: Yes
 5. Enable  Value Trimmer for select/multiselect v0.0.3  <br/>
 6. Enable Configurable Item processor v1.3.7a
-
-
