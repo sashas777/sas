@@ -2125,6 +2125,9 @@ span.weee {
   border-top: 1px solid #CCCCCC;
   padding: 5px 10px 0px 10px;
 }
+.toolbar p {
+  margin-bottom: 0px;
+}
 .toolbar:after {
   content: '';
   display: table;
@@ -2216,6 +2219,7 @@ span.weee {
 .pager {
   float: right;
   overflow: hidden;
+  margin: 0;
 }
 .pager > .count-container {
   float: left;

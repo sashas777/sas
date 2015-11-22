@@ -1523,7 +1523,7 @@ span.weee {
     border-bottom: 1px solid $c-module-border;
     border-top: 1px solid $c-module-border;    
     padding: 5px 10px 0px 10px;
-
+	p {margin-bottom:0px;}
     &:after {
         @include clearfix;
     }
@@ -1544,6 +1544,7 @@ span.weee {
     color: $c-text;
     line-height: 30px;
     font-size: $f-size-xs;
+    
 }
 
 .toolbar label,
@@ -1624,7 +1625,7 @@ $toolbar-icon-padding-offset: 8px;
 .pager {
     float: right;
     overflow: hidden;
-
+	 margin:0;
     & > .count-container {
         float: left;
     }
