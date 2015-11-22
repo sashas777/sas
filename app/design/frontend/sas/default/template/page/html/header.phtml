@@ -3,10 +3,10 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<header id="header" class="block-header container-fluid">
+<header id="header" class="block-header  row">
     <div class="page-header-container">
     	<div class="header-top-part-row row">
-    		<div class="header-top-part col-lg-12">
+    		<div class="header-top-part">
     			<div class="row">
     				<div class="col-md-6">
 	    				<a class="logo" href="<?php echo $this->getUrl('') ?>">
@@ -50,12 +50,11 @@
         	</div>
         </div>
      
-		<div class="header-nav-row row">
-			<div class="header-nav col-lg-12">
-				    <!-- Navigation -->
-		        <div id="header-nav" class="skip-content">
-		            <?php echo $this->getChildHtml('topMenu') ?>
-		        </div>
+	 
+		<div class="header-nav">
+			    <!-- Navigation -->
+	        <div id="header-nav" class="skip-content">
+	            <?php echo $this->getChildHtml('topMenu') ?>
 	        </div>
         </div>
         

@@ -2719,9 +2719,7 @@ body {
  * Header
  * ============================================ */
 .block-header {
-  max-width: 1170px;
   margin: 0 auto;
-  padding: 0 15px;
 }
 
 .block-header-container {
@@ -3155,7 +3153,7 @@ a.skip-link {
   position: absolute;
   z-index: 200;
   top: 40px;
-  right: 115px;
+  right: 270px;
   width: 200px;
 }
 
@@ -3214,7 +3212,7 @@ a.skip-link {
   position: absolute;
   z-index: 200;
   top: 40px;
-  right: 0;
+  right: 115px;
   width: 320px;
   background: white;
 }

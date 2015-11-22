@@ -29,10 +29,8 @@
 
 @include bp(min-width, $bp-medium + 1) {
 
-    .block-header {
-        max-width: $max-container-width;
-        margin: 0 auto;
-        padding: 0 $trim;
+    .block-header {        
+        margin: 0 auto;        
     }
 
     .block-header-container {
